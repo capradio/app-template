@@ -1,0 +1,2243 @@
+/*
+---------------------------------------------
+CSS: Responsive Style Sheet
+*/
+
+/*------------------------------------------------*/
+/* Variables SECTION START*/
+/*------------------------------------------------*/
+@link-color: #b22217;
+@link-hover: lighten(@link-color, 10%);
+/* link-hover: #df2b1d */
+@link-active: darken(@link-color, 10%);
+/* link-active: #851911 */
+
+@error-color: #900;
+@error-hover: lighten(@error-color, 10%);
+@error-active: darken(@error-color, 10%);
+
+@success-color: #6ca546;
+@success-hover: lighten(@success-color, 10%);
+@success-active: darken(@success-color, 10%);
+
+@serif: 'Minion Subhead Medium', serif;
+@sans: 'Avenir W01', sans-serif;
+@sans-roman: 400;
+@sans-medium: 500;
+@sans-heavy: 800;
+
+@red: #b22217;
+@red-hover: lighten(@red, 10%);
+/* red-hover: #df2b1d */
+
+@dark-gray: #494a4a;
+@gray: #636363;
+@gray-text: #999999;
+
+@wg: #766a62;
+@wg-text: lighten(@wg, 10%);
+/* wg-text: #91837a */
+@wg-60: lighten(@wg, 40%);
+/* wg-60: #d6d1ce */
+@wg-70: lighten(@wg, 30%);
+/* wg-70: #bfb7b2 */
+@wg-80: lighten(@wg, 20%);
+/* wg-80: #a89d96 */
+@wg-bg: #f1f0ef;
+@wg-bg-hover: darken(@wg-bg, 5%);
+/* wg-bg-hover: #e5e3e1 */
+@wg-border: #e4e1e0;
+@blue: #006993;
+@blue-hover: lighten(@blue, 10%);
+/* blue-hover: #008dc6 */
+
+/*------------------------------------------------ */
+/* Mobile (Portrait) - 320px to 480px */
+/* Design for a width of 320px */
+/*------------------------------------------------ */
+@media only screen and (min-width: 320px) {
+
+	/* Default styles handled in core.css */
+	
+/* --- Staff Page --- */
+.multi-column-list .cpr-related-content li {
+ float:left;
+ min-height: 250px;
+ border:none;
+ padding:0;
+ background-color: #fff;
+ width:35%;
+ margin: 1em;
+}	
+.book-event .calendar {
+ width: 60%;
+ margin: 10% 20%;
+}
+.podcast-dir .four-three .content .title {
+ font-size: 2.2rem;
+}
+
+}
+
+/*------------------------------------------------ */
+@media only screen and (min-width: 400px) {
+
+#recapform div {
+ width: auto;	
+}
+#recapform input {
+ width: auto;
+}
+#recapform input#emailaddress {
+ width: 200px;
+}
+#recapform div.emailaddress {
+ margin-bottom: 0;
+}
+#recapform input#lastname {
+ margin-right: 0;
+}
+
+}
+
+/*------------------------------------------------ */
+/* XS */
+/* Mobile (Landscape) - 480px to 768px */
+/* Design for a width of 480px */
+/*------------------------------------------------ */	
+@media only screen and (min-width: 480px) {
+
+#Responsive { height: 2px; }
+.related-content img { float:left; padding: 1em; width:40%; }
+.progress-bar { background-color:@wg-bg; height:25%; width:50%; position:relative; top:37%; left:20px; float:left; }
+.player-time { padding-left:40px; }
+.news-latest .verbose img { float:right; padding-left: 1em; }
+.music-header .featured-two { background-color:#fff; padding:1em; overflow:auto; }
+.music-header .featured-two .image { background:none; }
+.music-header .featured-two .image img { width:100%; float:left; }
+.music-header .featured-two-text { float:right;padding:2em; width:50%; }
+.music-header .featured-two-text h1 { font-size:2.8rem; }
+.latest-blog-posts .image img {
+ width:50%;
+ float:right;
+ margin-left:2em;
+}
+.latest-story-by-tag .image img {
+ width: 50%;
+ float:left;
+ margin-right:2em;
+}
+.npr-headlines a h2 {
+ font-size: 1.8rem;
+}
+#music.placeholder .container { padding:5em 7em; }
+.blog-links li { padding:1em; }
+#calendar-picker { float:right; }
+
+#music .blog-header .blog-header-text h1 span {
+ display:inline;
+ margin: 0;
+}
+
+#music .more-links a {
+ width:50%;
+}
+
+.more-links a.music:nth-child(odd)  {
+ border-right: 1px solid @wg-border;
+}
+
+/* --- program / show / segment styles --- */
+.segments li .image {
+ float:left;
+ padding: 0 1.5em .5em 0;
+ width: 40%;
+}
+.segment-text {
+ margin-top: 0;
+}
+.program .latest-show .segments .jplayerbox {
+ margin: 0;
+}
+.program-featured img {
+ width:45%;
+ float:left;
+ padding-right: 2em;
+}
+#show #main-content.content-box,
+#episode #main-content.content-box {
+  padding:2em;
+}  
+.more-stories .image {
+ float:left;
+ width: 50%;
+ padding-right: 1em;
+}
+.more-stories li {
+ overflow:auto;
+}
+/* -- Upcoming Shows -- */
+#upcoming-shows .item .image {
+ display:block;
+ width: 35%;
+ float:left;
+ padding: 0 2em 0 0;
+} 
+/* -- More Stories- new -- */
+#more-stories.story-list .item .item-image {
+ width: 35%;
+ float: left;
+ padding: 0 1.5em .5em 0;
+}
+#sidebar .more-stories .description {
+ padding: 0;
+}
+#sidebar #tag-list li .description {
+ padding-top: 0;
+}
+#sidebar #tag-list li img {
+ width:50%;
+}
+/* --- styles for richtext editor --- */
+.imgleft { float:left; margin: 5px 15px 5px 0; width:35%; }
+.imgright { float:right; margin: 5px 0 5px 15px; width:35%; }
+.imgleft50 { float: left; margin: 5px 15px 5px 0; width: 50%; }
+.imgright50 { float: right; margin: 5px 0 5px 15px; width: 50%; }
+.captionleft { width:50%; float:left; margin:0 15px 5px 0; }
+.captionright { width:50%; float:right; margin:0 0 5px 15px; }
+/* --- NPR Feed / RSS Feed Macros (for program page) --- */
+.rss-feed-item img.image {
+ width:35%;
+ float:left;
+ padding: 0 2em 0 0;
+}
+/* --- segment display on doc --- */
+.segments h2 {
+ margin-top: 0;
+}
+/* --- production team --- */
+#customShow_staff li img {
+ float:left;
+ width: 45%;
+ margin-right: 1em;
+}
+#customShow_staff li {
+ min-height:180px;
+}
+/* --- doc sidebar --- */
+#sidebar .funder-container img {
+  width:300px;
+}
+/* --- doc show sidebar --- */
+.sidebar-contentpicker {
+ overflow:auto;
+}
+.sidebar-contentpicker img {
+ width:40%;
+ padding-right:2em;
+ float:left;
+}
+/* --- doc header --- */
+#tvfh .prog-image {
+ float:left;
+ margin-right: 20px;
+}
+/* --- doc segment back to show --- */
+#doc-show-link .related-content img {
+ width: 200px;
+ padding:0;
+ margin-right: 1.5em;
+ float:left;
+}
+#doc-show-link .related-content {
+ padding: 1em;
+}
+#doc-show-link .related-content .related-text {
+ padding: 0;
+ margin: 0;
+}
+/* --- show segment one column --- */
+.one-column .transcript p {
+    font-size: 1.8rem;
+    line-height: 1.5em;
+}
+.one-column .transcript h2 {
+    font-size: 3rem;
+}
+.one-column .transcript blockquote {
+  font-size: 2.6rem!important;
+}
+.one-column .transcript blockquote p {
+ font-size: 2.6rem!important;
+ margin:0!important;
+ padding: 0!important;
+ width:auto;
+}
+.one-column .transcript .imgleft {
+    margin: .5em 1.5em .5em 0;
+}
+.one-column .transcript .imgright {
+    margin: .5em 0 .5em 1.5em;
+}
+.one-column .jplayerbox .jp-details p,
+.one-column .jplayerbox .jp-total-time p,
+.one-column .jplayerbox .jp-time-holder p {
+ font-size: 1.6rem;
+}
+/* --- Bio Page --- */
+.bio-contact,
+.bio-image {
+ float:right;
+ width:38%;
+ clear:right;
+}
+.bio-description {
+ float:left;
+ width:55%;
+}
+.bio-contact-links {
+ padding-top: 0;
+ border-top: none;
+}
+.bio-relations img {
+ width:200px;
+ float:left;
+ padding-right: 1em;
+ padding-bottom: 0;
+}
+/* --- Staff Page --- */
+.multi-column-list .cpr-related-content li {
+ width:25%;
+}
+/* --- News Sidebar Featured Program Shows Section --- */
+#sidebar .latest-shows img {
+ float:left;
+ width: 50%;
+ padding-right: 1em;
+}
+#sidebar .latest-shows .show-info {
+ margin-top: 0;
+}
+#sidebar .latest-shows li {
+ overflow:auto;
+}
+/* --- Sidebar Featured Item --- */
+.sidebar-featured .image img {
+ float:left;
+ width: 40%;
+ margin: 1.5em;
+}
+/* -- Home Page Latest Stories Section -- */
+.story-list .item .item-image {
+ padding: 0 0 0 1em;
+}
+.more-links a {
+ font-size: 1.4rem;
+}
+/* -- Home Page Featured -- */
+.featured-col12-4item .featured .featured-two,
+.featured-col12-4item .featured .featured-three,
+.featured-col12-4item .featured .featured-four {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+.featured-col12-4item .featured .featured-two .image-container,
+.featured-col12-4item .featured .featured-three .image-container,
+.featured-col12-4item .featured .featured-four .image-container {
+ align-self: center;
+ -ms-align-self: center;     
+ -webkit-align-self: center;
+ width: 50%;
+ padding-right: 1.5em;
+ float:left; 
+}
+.featured-col12-4item .featured .featured-two .text-container,
+.featured-col12-4item .featured .featured-three .text-container,
+.featured-col12-4item .featured .featured-four .text-container {
+ align-self: center;
+ -ms-align-self: center;     
+ -webkit-align-self: center;
+ width: 50%;
+ float:left; 
+}
+.featured-col12-4item .featured .featured-two .text-container .category,
+.featured-col12-4item .featured .featured-three .text-container .category,
+.featured-col12-4item .featured .featured-four .text-container .category {
+ margin-top:0;
+}
+.featured-col12-4item .featured .featured-first.noimage .text-container,
+.featured-col12-4item .featured .featured-two.noimage .text-container,
+.featured-col12-4item .featured .featured-three.noimage .text-container,
+.featured-col12-4item .featured .featured-four.noimage .text-container {
+ width:100%;
+}
+/* -- CapRadio Travels Page -- */
+.upcoming.story-list .item .item-image {
+ float: right;
+ max-width: 350px;
+ padding: 0 0 0 2em;
+ width: 50%;
+}
+.upcoming.story-list .item .item-text {
+ margin-top:0;
+}
+/* -- CapRadio Reads -- */
+#reads-selection.noevent img {
+ float:left;
+ padding: 1.5em;
+ height: 250px;
+}
+#reads-selection.noevent .text {
+ text-align: left;
+ padding-top: 5em;
+}
+.book-selection, .book-event {
+ width:50%;
+ float:left;
+ border-top: 0;
+}  
+.book-event {
+ border-left: 1px solid @wg-border;
+}	  
+.book-event .calendar {
+ width: 90%;
+ margin: 5% 5% 10%;
+}
+.author-bio .author .text .teaser {
+ display: block;
+}
+#reads-interviews .item {
+ overflow:auto;
+}
+#reads-interviews .item .item-image {
+ float:left;
+ padding: 0 2em .5em 0;
+ width: 50%;
+}
+#reads-interviews .view-all {
+ float: right;
+}
+#reads-interviews .jplayerbox {
+ clear:both;
+}
+/* -- 404 Page Not Found -- */
+#page-not-found .message {
+ margin: 3em;
+}
+#page-not-found .message h1 {
+ font-size:6rem;
+}
+#page-not-found .message h2 {
+ font-size:3rem;
+}
+/* -- Schedule -- */
+#schedule .tabs li {
+ margin: 0 .5em 0 0;
+}
+#schedule .tabs li.active {
+ border-bottom: 0;
+}
+#c24playlist.playlist .song-info {
+ width:78%;
+}
+#PartofSeries ul li img {
+ float: left; 
+ padding-right: 1em;
+}
+.podcast.story-block .four-three .content .title {
+ font-size: 1.8rem;
+}
+.podcast.story-block .item .item-image {
+ width: 30%;
+}
+
+} /* End XS */
+
+@media only screen and (min-width: 530px) and (max-width: 600px){
+#listen-programs.featured-horizontal .owl-item .item img  {
+ width:460px;
+}
+}
+
+/*------------------------------------------------ */
+/* Design for a width of 600px */
+/*------------------------------------------------ */
+@media only screen and (min-width: 600px) {
+
+#music .music-header .music-tagline {
+ display: block;
+ float:left;
+ border-right:1px solid #fff;
+ width:160px;
+}
+#music .music-header .blog-links {
+ margin-left:1em;
+ width:60%;
+}
+.post-image img {
+    float: right;
+    padding: 3em 3em 3em 1.5em;
+    width:45%;
+}
+.post-text {
+ width:55%;
+ padding: 3em;  
+}
+.post-button {
+ float:left;
+}
+.post-share {
+ float:right;
+ padding: 0;
+}
+.post-bottom {
+ overflow:auto;
+ clear:both;
+ padding: 0 3em 3em;
+}
+
+.owl-controls {
+ margin: 0 auto;
+}
+.owl-controls .owl-pagination {
+ display:block;
+ width:70%;
+ margin: 0 auto;
+ padding-top:8px;
+}
+.owl-controls .owl-buttons div {
+ top:-3px;
+}
+
+.music-header .featured-one .image { background-color:#fff; padding-bottom:390px;  }
+.music-header .featured-text { min-height:390px; }
+.music-header .featured-text { background-color:#fff; width:80%; margin:0 auto; position:relative; top:-50px;z-index:10; }
+.music-header .featured-two { width:100%;clear:both; margin-top:1.5em;  }
+
+#music .more-links a {
+ width:50%;
+}
+
+/* --- program / show / segment styles --- */
+
+.latest-show .segments li .image {
+ width: 35%;
+}
+.program-featured img {
+ width: 40%;
+}
+.more-stories .image {
+ width: 40%;
+}
+#sidebar #tag-list li img {
+ width:40%;
+}
+/* --- Staff Page --- */
+.multi-column-list .cpr-related-content li {
+ min-height: 280px;
+}
+/* --- Latest News list --- */
+.story-list .post-image img {
+ padding: 2em 2em 2em 1em;
+}
+/* -- Fund Drive Push Down -- */
+#fd-sm {
+ display:none;
+}
+#fd-lg {
+ display:block;
+ width:100%;
+}
+/* -- Form Styles -- */
+#contour input.text, #contour textarea {
+ width: 50%;
+ float:left;
+ margin-right:1em;
+}
+#contour span.checkboxlist, #contour span.radiobuttonlist, #contour span.checkbox {
+ width: 50%;
+}
+#contour .fieldLabel {
+ float: left;
+ width: 20%;
+ margin-right: 1em;
+ text-align: right;
+}
+.contourNavigation {
+margin-left:22%;
+}
+/* -- Internal Promo -- */
+.internal-promo-container.with-promo {
+ display:flex;
+ display: -webkit-flex;
+ display: -ms-flexbox;
+}
+.internal-promo-container.with-promo .internal-promo {
+ width:100%;
+ margin-bottom:0;
+}
+.internal-promo-container.with-promo .mailing-list {
+ float: left;
+ overflow:auto;
+ width:50%;
+ padding: 3em 2em 2em;
+}
+.book-event .calendar {
+ width: 60%;
+ margin: 5% 20% 10%;
+}
+#reads .reads-landing #sidebar .author-bio .author:first-of-type {
+ border-bottom:0;
+}
+#reads .reads-landing #sidebar .author-bio .author,
+#reads .reads-landing #sidebar #recent-books,
+#reads .reads-landing #sidebar #recent-interviews {
+ width: 50%;
+ float: left;
+}
+#reads .reads-landing #sidebar #recent-books {
+ padding-right: 3em;
+}
+#reads .reads-landing #sidebar,
+#reads .reads-landing #sidebar .author-bio {
+ overflow:auto;
+}
+#reads-interviews .jplayerbox {
+ clear:none;
+}
+/* -- 404 Page Not Found -- */
+#page-not-found .bottom-section {
+ background-color: @wg-bg;
+ padding:3em 0;
+}
+/* -- Schedule -- */
+#schedule .pdf-link {
+ float:right;
+ margin: 0;
+}
+.schedules .section-heading {
+ margin: 1em 0 1.5em 0;
+}
+.schedules .controls {
+ padding:0;
+ background-color: transparent;
+}
+.schedules .paging {
+ float:left;
+ display:inline-block;
+}
+.schedules .controls #calendar-picker {
+ float: right;
+ position: relative;
+ top: -10px;
+}
+.schedule-row .program-name {
+ width:73%;
+}
+#customShow_staff li {
+ width: 33%;
+}
+.podcast-dir .item {
+ width: 33%;
+}
+#recapform input#lastname {
+ margin-right: .5em;
+}
+
+} /* End min 600px */
+
+
+
+@media only screen and (min-width: 625px) {
+.music-header .featured-one .image { background-color:#fff; padding-bottom:340px;  }
+}
+
+@media only screen and (max-width: 768px) {
+.fd-promo { position: relative; z-index: 1000; }
+header.section-header .container { padding: 0; }
+}
+
+/*------------------------------------------------ */
+/* Tablet Portrait (SMALL) - 768px to 991px */
+/* Design for a width of 768px */
+/*------------------------------------------------ */
+@media only screen and (min-width: 768px) {
+#Responsive { height: 3px; }
+
+.affix { position: fixed; top: 20px; }
+
+
+ul.header-nav { float:right; list-style:none; margin: 15px 0 10px; }
+.header-nav li { display:inline; padding:0 1em; }
+.header-nav li:last-of-type { padding-right:0; }
+.header-nav li a { font-family: 'Avenir 85 Heavy', sans-serif; border:none; }
+.header-nav li a:hover { text-decoration:none; zoom: 1; filter: alpha(opacity=80); opacity: 0.8; }
+.related-content img { padding: 0 1em 0 0; }
+#show .related-content img { width:40%; padding-right:1em; float:left; }
+#show .related-content .dateline { display:block; font-style:italic; padding-bottom: 10px; }
+#show .related-text .teaser { display:block; }
+.author-bio .related-text .teaser { display:block; }
+.footer { height:37px; }
+.footer li a { line-height:2em!important; }
+.img-circle img { margin-bottom:30px; }
+.author-bio .contact-links .link-text { display:inline; }
+
+blockquote {
+ margin: 2em 3em;
+}
+
+blockquote:before {
+    color: @wg-text;
+   /* content: "\201C"; */
+    display: block;
+    font-size: 80px;
+    left: 0.5em;
+    position: absolute;
+    top: 2.9em;
+}
+.post-image img, .post-text {
+ width:50%;
+}
+/* -- Section Header -- */
+.section-header {
+ padding: 1.5em 0 1em;
+}
+.section-header h1 {
+ width: auto;
+ display: block;
+}
+.section-header .prog-image {
+ width: 150px;
+}
+.section-header .description {
+ float: left;
+ width: 40%;
+}
+.section-header .description.only {
+ width:65%;
+}
+.section-header .schedule,
+.section-header #moreseries {
+ width: 32%;
+ float: right;
+ text-align:right;
+}
+.section-header h1 {
+ padding: 0;
+}
+.section-header .description,
+.section-header .schedule,
+.section-header #moreseries {
+ padding: .5em 0 0;
+}
+.sub-nav .primary {
+ width: 60%;
+ display: inline-block;
+ border:0;
+}
+.sub-nav .secondary {
+ width: auto;
+ background-color: transparent;
+ display: inline-block;
+ float:right;
+}
+#music .sub-nav .primary {
+ border:0;
+}
+#music .sub-nav .secondary {
+ background-color: #484848;
+}
+.sub-nav .secondary .contact,
+.sub-nav .secondary .subscribe {
+ text-align:right;
+ width: auto;
+ border: 0;
+}
+.sub-nav .secondary .subscribe.only,
+.sub-nav .secondary .contact.only {
+ float:right;
+}
+.section-header #collapse-moreinfo {
+ display:block;
+}
+.section-header .collapse-toggle {
+ display:none; 
+}
+
+#music { background-color: @wg-bg; }
+#music #main-content.content-box {
+ background-color:#fff;
+ padding:2em;
+ border: 1px solid @wg-border;
+}
+#music .blog-header {
+ height:221px;
+}
+#music .blog-header .ghost-img {
+ position:absolute; 
+ right:0; 
+ z-index:1;
+ height:216px;
+ width:750px;
+ display: block;
+ zoom: 1; filter: alpha(opacity=50); opacity: 0.5;
+}
+#music .blog-header .blog-header-text {
+ width:80%;
+  margin-top:3em;
+}
+
+#music .sidebar {
+    width:100%;
+}
+
+#music .more-links a {
+ width:25%;
+}
+
+#music .more-links a.music:not(:last-child)  {
+ border-right: 1px solid @wg-border;
+}
+
+
+.music-header .main { margin-top:0em; }
+.music-header .sidebar .featured-one { display:none; }
+/*.music-header .main .featured-two { display:none; }*/
+.music-header .featured-one .image { padding-bottom:410px; }
+.music-header .featured-text { min-height:410px; }
+.music-header .featured-two { padding:0; }
+.music-header .featured-two .image img, .music-header .featured-two-text { width:100%; float:none; }
+.music-header .featured-two-text h1 { font-size:2.4rem; }
+.latest-story-by-tag .image img {
+ width: 100%;
+ float:none;
+ margin: 0;
+}
+.latest-story-by-tag {
+ min-height:420px;
+ padding: 1em;
+}
+.image-content-box {
+ min-height:400px;
+} 
+#acnowplayingnews, #acnowplayingmusic, #acnowplayingjazzstream, #acnowplayingclassicalstream { 
+height: 21em;
+}
+#music.placeholder .container { padding:5em 10em; }
+#playlist .show-info .show-time {
+    display: inline!important;
+    float: right!important;
+} 
+/* --- program / show / segment styles --- */
+.prog-image {
+ float:left;
+ margin-right:20px;
+ width: 220px;
+ display:block;
+}
+#moreinfo {
+ min-height:0;
+}
+.program .latest-show .content-box, .program .show-list .content-box {
+ padding:0;
+}
+.program-featured .content-box {
+ padding:0!important;
+}
+.program-featured .content-box img {
+ width:100%;
+ float:none;
+ padding:0;
+}
+.program .show-info {
+  padding: 1.5em 2em 2em;
+}
+.program .segments {
+  padding: 0 2em 2em;
+}
+.more-stories .image {
+ float:none;
+ width: 100%;
+ padding-right: 0;
+}
+#sidebar .more-stories li {
+ padding: 1.5em;
+ border-right: none;
+ min-height: 370px;
+}
+#sidebar .more-stories li:last-of-type {
+ border-right: 1px solid @wg-border;	
+}
+.latest-show .segments li .image {
+ width: 40%;
+}
+.program .latest-show .show-container .image {
+ float:right;
+ width:50%;
+ padding: 2em;
+}
+
+/* -- Upcoming Shows -- */
+#upcoming-shows .item h2 {
+ font-size: 2.2rem;
+}
+#upcoming-shows .item .image {
+ width: 25%;
+ max-width:200px;
+} 
+#upcoming-shows .item.two {
+ width: 49%;
+ margin-right: 2%;
+ float:left;
+}
+#upcoming-shows .item.two:last-of-type,
+#upcoming-shows .item.three:last-of-type {
+ margin-right: 0;
+}
+#upcoming-shows .item.two .image {
+ width: 35%;
+}
+#upcoming-shows .item.two .item-text {
+ width: 60%;
+ float:left;
+}
+#upcoming-shows .item.three {
+ width: 32%;
+ margin-right: 2%;
+ float:left;
+}
+#upcoming-shows .item.three .image {
+ width: 100%;
+ max-width: 100%;
+ padding: 0 0 1em 0;
+ float:none;
+}
+/* -- More Stories - new -- */
+#more-stories.story-list {
+ overflow:auto;
+}
+#more-stories.story-list .item.three {
+ width: 32.4%;
+ margin: 0 .5em 0 0;
+ float: left;
+ min-height: 305px;
+}
+#more-stories.story-list .item.three:last-of-type {
+ margin:0;
+}
+#more-stories.story-list .item .item-image {
+ width: 25%;
+}
+#more-stories.story-list .item.three .item-image {
+ width: 100%;
+ float: none;
+ padding: 0 0 .5em 0;
+}
+#sidebar #tag-list li img {
+ width:30%;
+}
+/* music page fix for tablet non-clickable section */
+#npr-music {
+ clear:both;
+}
+/* --- production team --- */
+#production-team {
+  padding: 1.5em 1em 0 1.5em;
+}
+#production-team .collapse {
+ display:block;
+}
+#production-team .panel-heading {
+ display:none;
+}
+#customShow_staff li {
+ width: 25%;
+}
+#customShow_staff {
+ padding: 0;
+}
+#customShow_staff h3 {
+ display:block;
+ text-transform:uppercase;
+ padding-bottom: 1em;
+}
+/* --- Staff Page --- */
+.staff-page {
+ background-color: @wg-bg;
+}
+.multi-column-list .cpr-related-content li {
+ min-height: 320px;
+}
+.multi-column-list .cpr-related-content li, .multi-column-list .bio-image {
+ width:200px;
+}
+.multi-column-list .cpr-related-content li .text {
+ padding: .5em 1em;
+}
+/* --- doc segment back to show --- */
+#doc-show-link .related-content {
+ padding: 0;
+}
+#doc-show-link .related-content .related-text {
+ padding: 1em;
+}
+/* --- News Header --- */
+.NewsSubnav {
+ display:none;
+}
+#collapseNewsSubnav.collapse {
+ display: block;
+}
+#news .header-text {
+ padding: 2.5em 0 2.5em 2em;
+}
+/* --- Sidebar Featured Program Shows Section --- */
+#sidebar .latest-shows img {
+ width: 40%;
+}
+/* --- News Featured --- */
+#news .featured-col12-4item .featured .featured-first .text-container {
+ background-color: #fff;
+ margin: 0 7%;
+ padding-bottom: 0;
+ padding-top: 2em;
+ position: relative;
+ top: -2em;
+ width: 86%;
+}
+
+#music .featured-col12-4item .featured .featured-first .text-container {
+ background-color: #fff;
+ margin: 0 7%;
+ padding-bottom: 0;
+ padding-top: 2em;
+ position: relative;
+ top: -2em;
+ width: 86%;
+}
+
+#music .musicFeatured .border {
+    margin:auto;
+    display:block;
+}
+
+/* --- Featured videos--- */
+.featured-videos .featured-one .embed-container {
+ width:60%;
+ float:left;
+ padding-right: 2em;
+ padding-bottom: 0;
+}
+.featured-videos .featured-two,
+.featured-videos .featured-three:nth-of-type(2),
+.featured-videos .featured-three:nth-of-type(3) {
+ width: 48%;
+ float:left; 
+ margin-top:0!important;
+}
+#news .featured-videos .featured-two:first-of-type,
+#news .featured-videos .featured-three:nth-of-type(2) {
+ margin-right: 4%;
+ border: none;
+}
+.featured-videos .featured-three:first-of-type .embed-container {
+ width:70%;
+ float:left;
+ padding-right: 2em;
+ padding-bottom: 2em;
+}
+/* -- Home Page Player Section -- */
+#player-section .news-station, #player-section .music-station {
+ width:35%;
+}
+#player-section .online-stream {
+ width:27%;
+}
+/* -- Featured -- */
+.featured-col12-4item .featured .item {
+ padding:2em;
+}
+.featured-col12-4item .featured .featured-first .text-container {
+ padding: 1.5em 2em 2em 2em;
+}
+/* -- Internal Promo -- */
+.internal-promo-container.with-promo .mailing-list {
+ padding: 4em 2em;
+}
+/* --Story List Section -- */
+.story-list .item h2 {
+ font-size:2.4rem;
+}
+.story-list .item .item-image {
+ padding: 0 0 0 3em;
+}
+.story-list .item {
+ padding: 2em;
+}
+#music .blogCont .story-list, #music .more-links {
+ float: left;
+}
+.story-list .jplayerbox {
+ max-width: 350px;
+}
+.item-util {
+ overflow:auto;
+ margin-bottom: 1.5em;
+}
+.item-util .icon-calendar-empty {
+ float:left;
+}
+.item-util .icon-user {
+ border-left: 1px solid #999;
+ padding-left: 5px;
+ margin-left: 10px;
+ float:left;
+}
+.more-links a {
+ font-size: 1.6rem;
+}
+.npr-section .section-heading {
+ padding: 1.5em 1.5em 1em;
+}
+.featured-horizontal .owl-item .item h3 {
+ font-size:1.8rem;
+}
+.story-block .item .item-image {
+ width: 30%;
+}
+.podcast.story-block .item .item-image {
+ width: 20%;
+}
+/* -- Story -- */
+#story #main-content {
+ padding: 2em;
+}
+/* -- All Programs -- */
+#all-programs .white-box,
+#schedule .white-box {
+ padding: 2em;
+}
+/* -- CapRadio Reads Page -- */
+#reads .reads-landing #sidebar,
+#reads .two-column .column-left,
+#reads .two-column .column-right section,
+#reads .sponsor-section {
+ padding: 2em;
+}
+#reads .reads-landing #reads-blog {
+ padding: 2em 2em 0 2em;
+}
+#reads .reads-landing #reads-selection {
+ margin: 2em 2em 0 2em;
+}
+#reads .reads-landing .section-heading {
+ font-size: 2rem;
+}	
+#reads-selection.noevent .book-selection .inner-wrap {
+ width: 60%;
+ margin: 0 20%;
+}  
+#reads .reads-landing .story-list .item {
+ padding: 2em 0;
+}
+#reads-interviews {
+ padding:2em;
+}
+#reads-interviews .view-all {
+ text-align: right;
+}
+#reads .twitter-section .twitter-feed.three-col-tweets {
+ padding: 2.8em;
+}
+#page-not-found #search {
+ padding-bottom: 6em;
+}
+#page-not-found #search .col-xs-12 {
+ padding:0 15px;
+}
+#page-not-found #search-box {
+ background: rgb(255, 255, 255); 
+ background: rgba(255, 255, 255, .9);
+ padding: 3em;
+}
+/* -- Schedule -- */
+#hypProgramLogo { 
+ display:block; 
+ float:left;
+ padding: 0 2em .5em 0;
+ max-width: 180px; 
+ color: #999;
+}
+.prev-next-nav .prev {
+ width:50%;
+ float:left;
+ border-bottom:0;
+ border-right: 1px solid @wg-border;
+ padding: 0 .5em; 
+}
+.prev-next-nav .next {
+ display:inline-block;
+ float:right;
+ width:49%;
+ border-bottom:0;
+ padding: 0 .5em; 
+}
+.prev-next-nav .category {
+ clear:both;
+ border-top: 1px solid @wg-border;
+}
+.prev-next-nav .prev.only,
+.prev-next-nav .next.only {
+ width: 70%;
+}
+.daily-playlist .content-box {
+    background-color: #fff;
+    border: 1px solid @wg-border;
+    margin: 10px 0;
+    padding: 30px;
+}
+.podcast-block {
+ margin: 0 0 2em -2em;
+}
+.podcast-dir .item {
+ padding: 1em 0 1em 2em;
+}
+.podcast-dir .category {
+ font-size: 1.3rem;
+}
+.podcast-dir .button,
+.dropdown-menu li {
+ font-size: 1.4rem;
+}
+.podcast-dir .item .title {
+ font-size: 1.8rem;
+}
+.mailing-list h2 {
+    font-size: 3.5rem;
+}
+.mailing-list h3.subheading {
+    font-size: 2.5rem;
+}
+.mailing-list p {
+    font-size: 1.6rem;
+}
+
+} /* End Small */
+
+
+/*------------------------------------------------ */
+/* Tablet & Small Monitor - 768px to 991px */
+/* to solve fly-out menu issue */
+/*------------------------------------------------ */
+@media only screen and (min-width: 768px) and (max-width:991px) {
+#nav .container { width: auto!important }
+#header-container.container { width: 100%!important }
+
+#music .blogCont .story-list, #music .more-links {
+    float:left;
+}
+
+}
+
+/*------------------------------------------------ */
+/* Tablet Landscape (MEDIUM) - 992px and greater */
+/* Design for a width of 992px */
+/*------------------------------------------------ */
+@media only screen and (min-width: 992px) {
+
+header { background-color: #fff; border-bottom: 3px solid #d6d2d0; }
+.block { height: auto; }
+
+#Responsive { height: 4px; }
+
+	header#top { 
+	background: #fff;
+	border-bottom:none;
+	
+		h1 { text-align: left; }
+	
+		.nav-btn {
+		border: 0;
+		clip: rect(0 0 0 0);
+		height: 1px;
+		margin: -1px;
+		overflow: hidden;
+		padding: 0;
+		position: absolute;
+		width: 1px;
+		}
+		
+	}
+
+	#nav {
+	overflow: visible!important;
+
+		.block { padding: 0!important; height:auto; }
+	
+		ul {
+		/*white-space: nowrap;*/
+		position: relative;
+		
+			&.top-level { border: none; margin: 0; }
+		
+			li {
+			display: inline-block;
+			float: left;
+			position: static!important;
+			border:none;
+			
+				&:last-child { border-right: none; }	
+				a { 
+				padding: 1em; 
+					&:focus, &:hover {
+					background: #e5e3e2;
+					text-decoration: none;				
+					}
+				}
+				
+				a.toggle { display:none; }
+				
+				&.three-col ul { width: 760px; }
+				&.two-col { position: relative!important;
+					ul { width: 415px; }
+				}
+				&.single-col { position: relative!important;
+					ul { width: 210px; }
+				}
+				
+				ul {					
+				border-bottom: 3px solid #c8c3c0;
+				overflow: hidden;
+				background-color: #e5e3e2;
+				background-position: bottom left;
+				background-repeat: no-repeat;
+				padding: 20px 0;
+					
+					&.news { 
+					border-color: #b12525; 
+					background-image: url('../images/nav/menu-bgr-news.png');
+					}
+					
+					&.music { 
+					border-color: @blue;
+					background-image: url('../images/nav/menu-bgr-music.png');
+					}
+										
+					.cpr-logo {
+					position: absolute;
+					left: 20px;
+					top: 20px;
+					}
+					
+					.mega-col:first-of-type {
+					border:none;
+					}		
+					
+					.mega-col { 
+					display: block;
+					padding: 0;
+					margin-bottom: -9999px;
+					padding-bottom: 9999px;
+					border-left: 1px solid #c8c3c0;
+						&.col-md-6:first-child { border: none; }
+					}
+					
+					.icon-col {
+					padding-top: 25px;
+					/* li { margin-bottom: 10px; } */
+					}
+										
+				}
+				
+				&:hover {
+				background: #e5e3e2;
+					
+					ul {
+					display: block!important;
+					position: absolute;
+					top: 100%;
+					left: 0;
+					
+						li { 
+						float: none; 
+						padding: 5px 20px;
+						font-size: 1rem;
+						display: block;
+						border:none;
+						-webkit-transition: background .2s ease-in-out;
+						-moz-transition:	background .2s ease-in-out;
+						-ms-transition: 	background .2s ease-in-out;
+						transition: 		background .2s ease-in-out;
+							
+							&:hover { background: #eeeeee; }
+							&.menu-label { 
+							display: block; 
+							color: @wg-text; 
+							text-transform: lowercase; 
+							font-weight: bold;
+							font-size: 1.6rem;
+								&:hover { background: none; }
+							}
+							a { 
+							background: none!important; 
+							padding: 0; 
+							text-transform: capitalize; 
+							font-weight: normal;
+							}
+						}
+						
+						.section-label { display: block; 
+							li:hover { background: none; }
+						}
+
+					}
+				}
+				
+			}
+		}
+		
+		.close-btn {
+		border: 0;
+		clip: rect(0 0 0 0);
+		height: 1px;
+		margin: -1px;
+		overflow: hidden;
+		padding: 0;
+		position: absolute;
+		width: 1px;
+		}
+		
+		.block-title {
+		border: 0;
+		clip: rect(0 0 0 0);
+		height: 1px;
+		margin: -1px;
+		overflow: hidden;
+		padding: 0;
+		position: absolute;
+		width: 1px;
+		}
+				
+	}
+
+	#header-logo { width: 200px; }
+	#header-logo.csus { width:230px;}
+	
+	#nav {
+		ul { 
+		float: left; 
+		}
+		form.search {
+		float: right;
+		margin: .6em 0 0 0;
+		}
+	}
+	
+	.menu li ul { background:@dark-gray; display:none; height:auto; padding:0; margin:0; border:0; position:absolute; width:225px; }
+	.menu li li { display:block; float:none; margin:0; padding:0; border-bottom:1px solid @wg-bg; }
+	.menu li li:last-of-type { border-bottom:none; }
+	#searchSubmit { margin-left:.4em; }
+
+.block { min-height:0; } 
+
+blockquote:before { top: 2.7em; }
+
+/* -- Section Header -- */
+.section-header .description,
+.section-header .description.only {
+ width: 50%;
+}
+.section-header .schedule,
+.section-header #moreseries {
+ width: 24%;
+}
+
+#music-logo, #news-logo { 
+ padding-left:0;
+}
+#music .music-header .blog-links {
+ width:60%;
+}
+.post-image img {
+ width:45%;
+}
+.post-text {
+ width:55%;
+}
+
+#music .blog-header .ghost-img {
+ zoom: 1; filter: alpha(opacity=100); opacity: 1.0;
+}
+#music .blog-header .blog-header-text {
+ width:45%;
+}
+
+#music .blogCont .story-list, #music .more-links {
+ float: left;
+}
+
+#music .sidebar, #music .musicFeatured {
+    width:100%;
+}
+
+.blog-featured .image img { width:60%; float:right; }
+.blog-featured .description { width:35%; margin-top:0; }
+.music-header .featured-one .image { padding-bottom:330px; }
+.music-header .featured-text { min-height:330px; }
+.music-header .featured-two-text h1 { font-size:2.8rem; }
+.latest-blog-posts { min-height:455px; }
+.latest-blog-posts .content-box h1 { font-size: 2.8rem; }
+.latest-blog-posts .content-box { min-height:435px; }
+.latest-story-by-tag { min-height:370px; padding: 1em; }
+.image-content-box { min-height:350px; }
+.npr-headlines { margin: 1.55em 0; }
+.npr-headlines a h2 { font-size: 1.6rem; }
+.twitter-feed.three-col-tweets ul li { width:256px; }
+
+#acnowplayingnews, #acnowplayingmusic, #acnowplayingjazzstream, #acnowplayingclassicalstream { 
+height: 18em;
+}
+
+#footer { }
+#footer-top { background-color:@wg-60; position:relative; padding-bottom:2em;}
+#footer-top ul { padding:10px; }
+#footer-top .navigation li { color:@dark-gray; float:left; margin:0 20px 0 0; text-align:left; overflow:hidden; width:168px; }
+#footer-top .navigation li h4 { height: 35px; text-transform: uppercase; font-size: 20px; font-weight: bold; border-bottom: 4px solid @wg-text; margin-bottom: 10px; }
+#footer-top .navigation li ul { margin:0px; overflow:auto; padding:0px; width:auto; }
+#footer-top .navigation li ul li { font-size: 1.4rem; clear: both; margin: 0px 0px 7px 0px; padding: 0px; border-bottom: 1px solid @wg-text; line-height: 18px; }
+#footer-top .navigation li.events-feed TABLE { margin:0px; padding:0px;}
+#footer-top .navigation li.events-feed TABLE TR { background:none; margin:0px; padding:0px;}
+#footer-top .navigation li.events-feed TABLE TR TD { margin:0px; padding:0px;} /* IE alignment fix */
+#footer-top .navigation li.events-feed TABLE TR TD { border-bottom: 1px solid @wg-text; }
+#footer-top .navigation li.events-feed ul li { border-bottom: none; }
+#footer-top .navigation li.events-feed TABLE TR TD BR { display:none; height:0px; width: 0px; }
+#footer-top .navigation li.events-feed TABLE TR TD.headline-region { display:none; }
+#footer-top .navigation li.events-feed TABLE TR TD.headline-tease { font-size: .75rem; padding: 5px 0; }
+#footer-top .navigation li.events-feed TABLE TR TD.headline-tease a {font-size: 1rem; font-weight:normal; margin-bottom: 4px; display:block !important; clear:both !important; width:100%; }
+#footer-top .navigation li.events-feed TABLE TR TD.headline-tease img { display:none; }
+#footer-top .navigation li ul li a { margin:0px; padding:0px;  }
+#footer-top .navigation li ul li p { line-height:16px; margin-bottom:5px; }
+#footer-top .navigation a { color: @dark-gray; }
+#footer-top .navigation a:hover { background-color: @wg-border; text-decoration:none; }
+#footer-top .navigation li.footer-donate { margin:0; }
+
+.related-content { margin-top:0; }
+.related-content .related-text { margin-top:0; }
+.related-text .teaser { display:block; }
+.sticky { width:80%; margin:0 auto; }
+
+.privacy { display:none; } 
+
+/* --- program / show / segment styles --- */
+.program .latest-show .show-container {
+   display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+.program .latest-show .show-container .image {
+ width: 50%;
+ align-self: center;
+ -ms-align-self: center;     
+ -webkit-align-self: center;
+  -ms-flex-order: 2;     
+  -webkit-order: 2;  
+  order: 2;
+}
+.program .latest-show .show-container .show-info {
+ align-self: center;
+ -ms-align-self: center;     
+ -webkit-align-self: center;
+ width: 50%;
+  -ms-flex-order: 1;     
+  -webkit-order: 1;  
+  order: 1;
+}
+.program .latest-show .show-container .show-info.noimage {
+ padding: 2em 10em;
+ width: 100%;
+}
+.latest-show .segments li .image {
+ width: 25%;
+}
+.segment-text {
+ width:44%;
+ float:left;
+}
+.segments li.noimage .segment-text,
+.segments li.noaudio .segment-text {
+    width: 69%;
+}
+.program .latest-show .segments .jplayerbox {
+ padding: 0 0 0 1em;
+}
+#upcoming-shows .item .item-text {
+ width:80%;
+}
+#sidebar-collapse .panel-heading, #moreinfo .panel-heading {
+ display:none;
+}
+#sidebar-collapse .collapse,
+#sidebar-collapse #story_archive h3,
+#sidebar-collapse .twitter-feed h3,
+#sidebar-collapse .community-links h3,
+#sidebar-collapse #sidebar-relations h3,
+#moreinfo .collapse, #moreinfo .panel-body {
+ display:block;
+}
+#sidebar-collapse .sidebar-relations h3 {
+ background-color: @wg-60;
+ color: #fff; 
+}
+#moreinfo {
+ margin:0;
+}
+#moreinfo .panel-body {
+    padding: 0;
+}
+#show .sidebar-featured .image img {
+ float: left;
+ margin: 1.5em;
+ width: 40%;
+}
+/* music page fix for tablet non-clickable section */
+#npr-music {
+ clear:none;
+}
+/* offset trick for 1 column layout */
+.one-column .transcript p, .one-column .transcript h1, .one-column .transcript h2, .one-column .transcript h3,
+.one-column .transcript .author, .one-column .transcript .primary-audio, .one-column .transcript hr,
+.one-column .category, .one-column .page-title, .one-column .author.small, .one-column .transcript ul,
+.one-column .miniplayer-container, .one-column blockquote, .one-column .jplayerbox {     
+    float: none;
+    margin-left: 17.5% !important;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    position: relative;
+    width: 65%;
+ }
+/* --- show segment one column --- */
+#show .one-column .related-content,
+#show .one-column .cpr-related-content,
+#show .one-column .author-bio,
+#show .one-column .tags {
+ float: none;
+ margin-left: 17.5% !important;
+ padding-left: 0.9375rem;
+ padding-right: 0.9375rem;
+ position: relative;
+ width: 65%;
+}
+#show .one-column .related-content {
+ margin-top:3em;
+}
+.one-column .prev-next-nav .category{
+ width:auto;
+ margin:0!important;
+}
+.one-column .category,
+.one-column .page-title,
+.one-column .author.small,
+.one-column .miniplayer-container,
+.one-column blockquote {
+   text-align: center;
+}
+.one-column blockquote {
+ padding: 0 3em;
+}
+.one-column blockquote p {
+ margin-left:0!important;
+}
+blockquote, blockquote p {
+ line-height: 1.4;
+ font-size: 2.6rem !important;
+}
+.one-column .miniplayer-container p {
+ margin-left: 80px!important;
+ padding: 0;
+ text-align: left;
+}
+.one-column .page-title {
+    font-size: 4rem;
+}
+.one-column .transcript .imgleft {
+    margin: 1.5em 2.5em 1.5em 0;
+}
+.one-column .transcript .imgright {
+    margin: 1.5em 0 1.5em 2.5em;
+}
+.one-column .transcript .imgleft > blockquote {
+    margin: 1em 0 1em 3em !important;
+    padding: 0;
+}
+.one-column .transcript .imgright > blockquote {
+    margin: 1em 3em 1em 0 !important;
+    padding: 0;
+}
+.one-column .transcript ul {
+ margin-left: 19.5%!important
+}
+.one-column .transcript ul li p {
+ margin-left:0!important;
+ width: auto;
+}
+ /* --- Staff Page --- */
+.multi-column-list .cpr-related-content li, .multi-column-list .bio-image {
+ width:215px;
+}
+/* --- Sidebar Featured Program Shows Section --- */
+#sidebar .latest-shows img {
+ float:none;
+ padding-right:0;
+ width:100%;
+}
+#sidebar .latest-shows .show-info {
+ margin-top: 1em;
+}
+/* --- Sidebar Featured */
+.sidebar-featured .image img {
+ float:none;
+ width: 100%;
+ margin: 0;
+}
+/* --- Sidebar Taglist */
+#sidebar #tag-list li img {
+ width: 40%;
+ padding-bottom:.2em;
+}
+/* -- Home Page Player Section -- */
+#player-section .stations p {
+ font-size:1.1rem;
+}
+#player-section .news-station, #player-section .music-station {
+ width:38%;
+}
+#player-section .online-stream {
+ width:21%;
+}
+/* -- Home Page Featured -- */
+.featured-col12-4item .featured .featured-four .image-container img {
+ width:252px;
+}
+.featured-col12-4item .featured .featured-first,
+.flex {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+.featured-col12-4item .featured .featured-first .text-container {   
+  -ms-flex-order: 1;     
+  -webkit-order: 1;  
+  order: 1;
+  align-self: center;
+  -ms-align-self: center;     
+  -webkit-align-self: center;
+}
+.featured-col12-4item .featured .featured-first .image-container {     
+  -ms-flex-order: 2;     
+  -webkit-order: 2;  
+  order: 2;
+  align-self: center;
+  -ms-align-self: center;     
+  -webkit-align-self: center;
+}
+.featured-col12-4item .featured .image-label .story-label {
+ position:relative;
+}
+.featured-col12-4item .featured .featured-first .image-container {
+ float:right; 
+ display:block;
+ width: 55%;
+ padding: 2em 2em 2em 0;
+}
+.featured-col12-4item .featured .featured-first .text-container {
+ width:45%;
+}
+.featured-col12-4item .featured .featured-first.noimage .text-container {
+ padding:0;
+}
+.featured-col12-4item .featured .item.noimage {
+ padding: 2em 10em;
+}
+.featured-col12-4item .featured .featured-two {
+ width:80%;
+}
+.featured-col12-4item .featured .featured-two.noimage {
+ width:100%;
+}
+.featured-col12-4item .featured .featured-three,
+.featured-col12-4item .featured .featured-four {
+ float:left; 
+ border-right: 1px solid @wg-border;
+ border-bottom: 0;
+} 
+.featured-col12-4item .featured .featured-three:last-of-type,
+.featured-col12-4item .featured .featured-four:last-of-type {
+ border-right:0;
+}
+.featured-col12-4item .featured .featured-three {
+ width:50%;
+}
+.featured-col12-4item .featured .featured-three.noimage,
+.featured-col12-4item .featured .featured-four.noimage {
+ padding: 2em;
+}
+.featured-col12-4item .featured .featured-four {
+ flex-direction: column;
+ -ms-flex-direction: column;
+ -webkit-flex-direction: column;
+ float:left;
+ width: 33.33%;
+}
+.featured-col12-4item .featured .featured-four .image-container,
+.featured-col12-4item .featured .featured-four .text-container {
+ width:100%;
+ padding:0;
+ float:none;
+}
+.featured-col12-4item .featured .featured-four .text-container .category {
+ margin-top: 10px;
+}
+/* -- Music Featured -- */
+#music .featured .item.featured-first {
+  padding-top: 2em;
+}
+/* -- Home Page Internal promo -- */
+.internal-promo-container {
+ display: block;
+ margin: 9em 0 1em 2.5em;
+ float:right;
+}
+.internal-promo-container.with-promo {
+ margin: 1.7em 0 .7em .9em;
+ display: block;
+}
+.internal-promo-container.with-promo .internal-promo {
+ padding-right: 0;
+}
+.internal-promo-container.with-promo .internal-promo, 
+.internal-promo-container.with-promo .mailing-list {
+ width: 300px;
+ float:none;
+}
+.internal-promo-container.with-promo .mailing-list, .mailing-list {
+ padding: 1em;
+}
+/* -- Home Page Latest Stories Section -- */
+.story-list .item h2 {
+ font-size:2.6rem;
+}
+.story-list .item {
+ padding: 2em;
+}
+.story-list .item.with-promo {
+ min-height: 251px;
+}
+#listen-programs.featured-horizontal .owl-item .item {
+ min-height: 350px;
+}
+
+
+/* -- CapRadio Reads Page -- */
+#reads .reads-landing #reads-selection {
+ width: 91.5%;
+ float:left;
+}
+.book-event .calendar {
+    margin: 5% 25% 10%;
+    width: 50%;
+}
+#reads .reads-landing #reads-blog {
+ width:68%;
+ float:left;
+ padding: 2em;
+}
+#reads .reads-landing #sidebar {
+ width: 32%;
+ float: right;
+}
+#reads .reads-landing #sidebar #recent-books,
+#reads .reads-landing #sidebar #recent-interviews,
+#reads .reads-landing #sidebar .author-bio .author {
+ float:none;
+ width: 100%;
+ padding-right:0;
+}
+#reads .reads-landing #sidebar .author-bio .author:first-of-type {
+ border-bottom: 1px solid @wg-border;
+}
+#reads .two-column .column-left {
+ border-right: 1px solid @wg-border;
+}
+#reads .two-column .sidebar-featured .image img {
+ float: left;
+ margin: 1.5em;
+ width: 40%;
+}
+#reads .two-column .column-left.npr-section,
+#reads .two-column .column-right section:last-of-type {
+ border-bottom:0;
+}
+/* -- CapRadio Reads Interviews Section -- */
+#reads-interviews .item {
+ float: left;
+ width: 32%;
+ margin: 0 2% 0 0;
+ min-height: 440px;
+}
+#reads-interviews .item:last-of-type {
+ margin: 0;
+}
+#reads-interviews .item .item-image {
+ float:none;
+ padding: 0 0 1em 0;
+ width:100%;
+}
+#reads-interviews .view-all {
+ clear:both;
+}
+.galleria-fullscreen, .galleria-s3 {
+ display:block;
+}
+/* -- 404 Page Not Found -- */
+#page-not-found .message h1 {
+ font-size:8rem;
+}
+#page-not-found .message h2 {
+ font-size:4rem;
+}
+.podcast-dir .item {
+ width: 25%;
+}
+.podcast-dir #archive:before { 
+  margin-top: -20px; 
+  height: 20px; 
+}
+.podcast.story-block .four-three .content .title {
+ font-size: 1.4rem;
+}
+.podcast.story-block .item .item-image {
+ width: 40%;
+}
+#style-guide .sticky {
+ width: 210px;
+}
+	
+#music .blogCont .story-list, #music .more-links {
+    float:left;
+}
+
+#sidebar .mailing-list h2 {
+    font-size: 2.9rem;
+}
+#sidebar .mailing-list h3.subheading {
+    font-size: 1.8rem;
+}
+#sidebar .mailing-list p {
+    font-size: 1.5rem;
+}
+#sidebar .mailing-list input {
+    width: 100%;
+}
+#sidebar #recapform input#emailaddress, 
+#sidebar #recapform div {
+ width: 100%;
+}
+#sidebar .mailing-list div.emailaddress {
+ margin-bottom: .4em;
+}
+ 
+}  /* End Medium */
+
+/*------------------------------------------------ */
+/* Desktop Large (LARGE) - 1200px and greater */
+/* Design for a width of 1200px */
+/*------------------------------------------------ */
+@media only screen and (min-width: 1200px) {
+#Responsive { height: 4px; }
+
+	#nav {
+		ul { float: left; }
+		form.search {
+		float: right;
+		}
+	}
+	
+body { background-color: @wg-bg; }
+.fd-promo {
+ padding: 10px 0;
+}
+.content-box { background-color: #fff; padding:30px; margin:10px 0; border: 1px solid @wg-border; }	
+	
+h1.page-title { margin-top: 0; }
+blockquote:before { top: 2.4em; }
+.related-text { margin-top: 15px; }
+.sticky { display:block; width:360px; position:fixed; }
+#sidebar { display:block; }
+
+#music .sidebar {
+    width:inherit;
+}
+
+#music #accordion{
+max-width:360px;
+}
+
+
+/* -- Music Featured -- */
+#music .featured .item.featured-first {
+  padding-top:0;
+}
+
+.related-content img { float:left; padding-right: 1em; width:300px; }
+.related-content .dateline { display:block; font-size: 1rem; padding-bottom: 10px; }
+.related-text .teaser { display:block; }
+#footer-top .navigation li { width:207px; }
+.embed-instagram { padding-bottom: 110%;} 
+
+.section-header .prog-image {
+ width: 200px;
+}
+.section-header .schedule,
+.section-header #moreseries {
+ width: 20%;
+}
+
+.music-header .featured-one .image { padding-bottom:300px; }
+.music-header .featured-text { min-height:300px; }
+.music-header .main .featured-two { display:block; }
+.music-header .featured-two { margin-top:0; padding:0;  }
+.music-header .featured-two .image img { width:100%; float:left; }
+.music-header .featured-two-text { height:200px; width:50%; float:right; }
+.music-header .sidebar { min-width:310px; }
+.latest-blog-posts {  min-height:435px; }
+.latest-blog-posts .content-box { min-height:415px; }
+.latest-blog-posts .content-box h1 { font-size: 3rem; }
+.latest-story-by-tag { min-height:430px; }
+.image-content-box { min-height:410px; }
+.npr-headlines { margin: .8em 0; }
+.twitter-feed.three-col-tweets ul li { width:322px; }
+
+#acnowplayingnews, #acnowplayingmusic, #acnowplayingjazzstream, #acnowplayingclassicalstream { 
+height: 15em;
+}
+.blog-links { list-style:none; display:block;margin:0 auto;text-align:center;padding:3em 0 1em; }
+.music-logo { display:inline-block; border-right: 1px solid white; height:100px;padding: 0 2em; }
+
+.more-stories li { min-height:315px; }
+.more-stories .description { padding: .5em 1em; }  
+
+/* --- program / show / segment styles --- */
+.latest-show .segments li .image {
+ width: 18%;
+}
+#show, #episode {
+ margin-top:0;
+ padding-top: 1em;
+}
+
+#show .sidebar-featured .image img {
+ float: none;
+ margin: 0;
+ width: 100%;
+}
+#sidebar .more-stories li {
+ border-right: 1px solid @wg-border;	
+ min-height: 0;
+ border-top:0;
+}
+#sidebar .more-stories .description {
+ min-height: 0;
+}
+#sidebar .more-stories .image {
+ float:left;
+ width:50%;
+ padding-right: 1em;
+}
+#sidebar #tag-list li img {
+ width:50%;
+}
+/* --- doc show sidebar --- */
+.sidebar-contentpicker img {
+ width:100%;
+ padding-right:0;
+ float:none;
+}
+/* --- doc segment one column --- */
+.one-column .ad-unit {
+ width:300px;
+ float:right;
+ margin-left:2em;
+ padding:0;
+}
+/* --- Bio Page --- */
+.bio-relations {
+ padding: 0;
+ margin:0;
+ border-top: none;
+}
+/* -- Fund Drive Push Down -- */
+.custom-container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 1170px;
+}
+/* -- Home Page Player Section -- */
+#player-section .stations p {
+ font-size:1.2rem;
+}
+#player-section .news-station, #player-section .music-station {
+ width:40%;
+}
+#player-section .online-stream {
+ width:17%;
+}
+/* -- Home Page Featured -- */
+.featured-col12-4item .featured .featured-four .image-container img {
+ width:318px;
+}
+.featured-col12-4item .featured .featured-one .image-container {
+ width: 60%;
+}
+.featured-col12-4item .featured .featured-one .text-container,
+.featured-col12-4item .featured .featured-two .image-container  {
+ width:40%;
+}
+.featured-col12-4item .featured .featured-two .text-container {
+ width:60%;
+}
+/* -- Home Page Internal promo -- */
+.internal-promo-container {
+ margin-top: 10em;
+}
+/* -- Home Page Story List -- */
+.story-list .item.col-lg-wide .item-util {
+ float:left;
+ width: 18%;
+ margin: 0 3em 0 0;
+}
+
+#music .story-list .item.col-lg-wide .item-util {
+ min-width:180px;
+}
+
+.story-list .item.col-lg-wide .item-util .icon-user {
+ border: none;
+ margin-left: 0;
+ padding: 0;
+}
+.story-list .item.col-lg-wide .item-util .icon-calendar-empty, 
+.story-list .item.col-lg-wide .item-util .icon-user {
+ float:none;
+}
+.story-list .item.col-lg-wide .item-text {
+ width:45%;
+ float:left;
+}
+.story-list .item.col-lg-wide.noimage .item-text {
+ width:60%;
+}
+.story-block .item .item-image {
+ width:30%;
+}
+.one-column .story-block .item .item-image {
+ width:25%;
+}
+#listen-programs.featured-horizontal .owl-item .item {
+ min-height: 330px;
+}
+/* -- CapRadio Reads -- */
+#reads .reads-landing #reads-selection {
+ width: 61%;
+ float:left;
+}
+#reads .reads-landing .ad-unit.visible-lg {
+ padding: 7em 4em 2em 0;
+}
+#page-not-found {
+  background: url(http://www.capradio.org/media/4106271/lake_mcclure_1_wide.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* -- Schedule -- */
+#schedule  {
+ padding-top: 2em;
+}
+.daily-playlist #main-container {
+ padding-top:2em;
+}
+#upcoming-shows .item.three {
+  min-height: 390px;
+}
+.segments li.noimage .segment-text,
+.segments li.noaudio .segment-text {
+    width: 62%;
+}
+.segments div.jp-audio div.jp-type-single div.jp-progress {
+    width: 55%;
+}
+
+.story-list div.jp-audio div.jp-type-single div.jp-time-holder p, .story-list .jp-details p, .story-list .jp-total-time p,
+.segments div.jp-audio div.jp-type-single div.jp-time-holder p, .segments .jp-details p, .segments .jp-total-time p { 
+ font-size: 1.6rem; 
+ font-weight:400; 
+}
+#style-guide .sticky {
+ width: 260px;
+}
+
+// style-guide sidebar elements
+#style-guide #sidebar #top-stories,
+#style-guide #sidebar .sidebar-featured,
+#style-guide #sidebar .twitter-feed,
+#style-guide #sidebar .story-block,
+#style-guide #sidebar .cpr-related-content {
+ width: 350px;
+}
+
+#music .blogCont .story-list, #music .more-links {
+ float: inherit;
+}
+
+#music .musicFeatured {
+    width:66.66666666666666%;
+    padding-right:0px;
+}
+
+#sidebar #recapform input#firstname,
+#sidebar #recapform input#lastname,
+#music.landing-page #recapform input#firstname,
+#music.landing-page #recapform input#lastname {
+ width: 150px;
+}
+#sidebar #recapform input#lastname,
+#music.landing-page #recapform input#lastname {
+ margin-right: 0;
+}
+#sidebar #recapform input#emailaddress,
+#music.landing-page #recapform input#emailaddress {
+ width: 230px;
+}
+#sidebar .mailing-list input,
+#sidebar #recapform div {
+    width: auto;
+}
+#sidebar .mailing-list h3.subheading,
+#news #sidebar .mailing-list h3.subheading {
+ font-size: 2.2rem;
+}
+#sidebar .mailing-list p {
+ font-size: 1.5rem;
+}
+#music.landing-page .mailing-list {
+ max-width: 360px;
+}
+
+} /* End Large */
