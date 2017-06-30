@@ -18,6 +18,7 @@
     <!-- CSS -->
     {{ CSS.push('less/app.less') }}
     {{ CSS.push('less/core.less') }}
+    {{ CSS.push('less/capapp.less') }}
     {% block extra_css %}{% endblock extra_css %}
     {{ CSS.render('css/rendered/app.min.css') }}
 
@@ -31,7 +32,7 @@
     {{ JS.push('js/lib/modernizr.js') }}
     {{ JS.push('js/lib/cookie.js') }}
     {{ JS.push('js/lib/es6-promise.js') }}
-    {{ JS.push('js/lib/cross-storage-client.js') }}
+    {# {{ JS.push('js/lib/cross-storage-client.js') }} #}
     {{ JS.push('js/app_config.js') }}
     {{ JS.push('js/analytics.js') }}
     {{ JS.render('js/app-header.min.js') }}
@@ -39,20 +40,29 @@
     <a class="sr-only" href="#content">Skip To Content</a>
 
     {% block nav %}
-    <nav role="navigation">
-        <ul class="site-links">
-            <li class="npr"><a href="http://npr.org"><img src="http://media.npr.org/chrome/news/nprlogo_138x46.gif" alt="NPR" /></a></li>
-            <li class="news"><a href="http://www.npr.org/sections/news/">News</a></li>
-            <li class="arts"><a href="http://www.npr.org/sections/arts/">Arts &amp; Life</a></li>
-            <li class="music"><a href="http://www.npr.org/music/">Music</a></li>
-            <li class="listen"><a href="http://www.npr.org/listen/">Listen</a></li>
-        </ul>
-        <ul class="site-links-2">
-            <li class="stations"><a href="http://www.npr.org/templates/stations/stations/">Stations</a></li>
-            <li class="donate"><a href="http://www.npr.org/stations/donate/index.php">Donate</a></li>
-            <li class="shop"><a href="http://shop.npr.org">Shop</a></li>
-        </ul>
-    </nav>
+    <header id="top" role="banner">
+        <div class="block">
+            <div id="header-container" class="container">
+            
+                <a href="/news"><img id="news-logo" src="http://www.capradio.org/images/nav/CapRadioNewsLogo.png"/></a>
+
+                <!-- <a class="nav-btn" id="nav-open-btn" href="#nav"><img src="http://www.capradio.org/images/nav/menu.png" /></a> -->
+
+                <div style="width:500px; float:right;" class="visible-lg">
+                  <ul class="header-nav">
+                     <li><a class="donate" href="https://community.capradio.org/monthly-evergreen-donation" onclick="ga('send', 'event', 'Link', 'Click', 'donateheader');"><img src="http://www.capradio.org/images/nav/donate.png" /> donate</a></li>
+                     <li><a class="listen" href="http://player.capradio.org" target="_blank"><img src="http://www.capradio.org/images/nav/listen.png" /> listen live</a></li>
+                  </ul>
+                </div>
+                <div style="width:500px; float:right;" class="visible-md">
+                  <ul class="header-nav">
+                    <li><a class="donate" href="https://community.capradio.org/monthly-evergreen-donation" onclick="ga('send', 'event', 'Link', 'Click', 'donateheader');"><img src="http://www.capradio.org/images/nav/donate.png" /> donate</a></li>
+                    <li><a class="listen" href="http://player.capradio.org" target="_blank"><img src="http://www.capradio.org/images/nav/listen.png" /> listen live</a></li>
+                  </ul>
+                </div>
+            </div>  
+         </div>
+    </header>
     {% endblock nav %}
 
     {% block header_content %}
@@ -62,28 +72,21 @@
     {% endblock content %}
 
     {% block footer %}
-    <footer>
-        <div class="primary">
-            <ul>
-                <li><a href="http://www.npr.org" data-action="Click Logo"><img src="http://media.npr.org/chrome/news/nprlogo_138x46.gif" alt="NPR Logo"></a></li>
-                <li class="news"><a href="http://www.npr.org/sections/news/">News</a></li>
-                <li class="artslife"><a href="http://www.npr.org/sections/arts/">Arts &amp; Life</a></li>
-                <li class="music"><a href="http://www.npr.org/music/">Music</a></li>
-                <li class="programs"><a href="http://www.npr.org/programs/">Programs</a></li>
-                <li class="listen"><a href="http://www.npr.org/listen/">Listen</a></li>
-                <li class="about"><a href="http://www.npr.org/about/">About</a></li>
-            </ul>
-        </div>
-        <div class="secondary">
-            <p>&copy;2016 NPR</p>
-            <ul>
-                <li id="footerContact"><a href="http://help.npr.org/npr/includes/customer/npr/custforms/contactus.aspx">Contact</a></li>
-                <li><a href="http://www.npr.org/about/termsofuse.html">Terms of Use</a></li>
-                <li><a href="http://www.npr.org/about/privacypolicy.html">Privacy</a></li>
-                <li><a href="http://thin.npr.org/">Text-Only</a></li>
-            </ul>
-        </div>
-    </footer>
+    <div id="footer-bottom">
+      <div class="container">
+        <ul class="logos hidden-xs">
+            <li class="cpb"><a target="_blank" title="Corporation for Public Broadcasting" href="http://www.cpb.org/"></a></li>
+            <li class="apm"><a target="_blank" title="American Public Media" href="http://www.americanpublicmedia.org/"></a></li>
+            <li class="pri"><a target="_blank" title="Public Radio International" href="http://www.pri.org/"></a></li>
+            <li class="npr"><a target="_blank" title="National Public Radio" href="http://www.npr.org/"></a></li>
+            <li class="crn"><a target="_blank" title="Capital Public Radio Network" href="http://capradionetwork.org"></a></li>
+            <li class="csus"><a target="_blank" title="California State University, Sacramento" href="http://www.csus.edu"></a></li>
+        </ul> <!-- .logos -->
+
+          <p>Capital Public Radio stations are licensed to California State University, Sacramento. &#169; 2017, Capital Public Radio. All Rights Reserved. <a class="privacy" href="/privacy">Privacy Policy</a></p>
+
+      </div>
+    </div>
     {% endblock footer %}
 
     {{ JS.push('js/lib/jquery.js') }}
