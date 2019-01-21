@@ -38,7 +38,7 @@ ASSETS_SLUG = '$NEW_PROJECT_SLUG'
 """
 DEPLOYMENT
 """
-PRODUCTION_S3_BUCKET = 'capradio.app'
+PRODUCTION_S3_BUCKET = 'projects.capradio.org'
 
 STAGING_S3_BUCKET = 'capradio.app.stage'
 

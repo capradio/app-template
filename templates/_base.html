@@ -26,6 +26,21 @@
 
     {% block extra_head %}
     {% endblock extra_head %}
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1265410-1"></script>
+    <script>
+    if (window.self === window.top) { 
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-1265410-1');
+    }
+    </script>
+
+    <!-- nprds analytics -->
+    <script type="text/javascript">(function () { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = '//stream.publicbroadcasting.net/analytics/aac6.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })();</script>
 </head>
 <body>
     <!-- ANALYTICS JAVASCRIPT -->
@@ -34,7 +49,7 @@
     {{ JS.push('js/lib/es6-promise.js') }}
     {# {{ JS.push('js/lib/cross-storage-client.js') }} #}
     {{ JS.push('js/app_config.js') }}
-    {{ JS.push('js/analytics.js') }}
+    {# {{ JS.push('js/analytics.js') }} #}
     {{ JS.render('js/app-header.min.js') }}
 
     <a class="sr-only" href="#content">Skip To Content</a>
